@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="软件版本:1.0 \n功能介绍:秒红包,抢福利包. 目前只支持抢当前QQ聊天页面中的红包" />
+        android:text="软件版本:1.0 \n功能介绍:秒红包,抢福利包. 目前只支持抢当前QQ聊天页面中的红包\n安装说明:安装好 apk 后,打开手机设置-->辅助功能 里面找到  QQ抢红包选项,选择打开即可使用" />
 
     <Button
         android:id="@+id/button1"
@@ -25,15 +25,15 @@
         android:layout_alignLeft="@+id/textView2"
         android:onClick="all"
         android:text="抢所有红包" />
-
+    
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/textView3"
-        android:layout_marginRight="26dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="19dp"
         android:onClick="fuli"
         android:text="只抢福利包" />
 
@@ -44,16 +44,33 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/button1"
         android:layout_marginTop="16dp"
+        android:textColor="#68f"
         android:text="说明:默认情况下 软件识别红包内容为 60/1 或者30/5 中间如果内容以  / 分割,则视为雷包,不抢此类红包." />
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2">
+        
+           
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wxskcode" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:text="软件开发者: 杨斌 \nQQ 523084685"
+        android:text="如果该外挂为您带来了收入,希望您能多多支持,扫描二维码,向我捐赠5元.\n开发者: 杨斌 ;QQ: 523084685"
         android:textColor="#f07" />
+        
+    </RelativeLayout>
+ 
 
 </RelativeLayout>

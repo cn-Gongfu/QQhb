@@ -17,7 +17,6 @@ public class QiangHongBaoService extends AccessibilityService {
 	int HONGBAO_TYPE_FULI = 2;
 	public static int HONGBAO_TYPE = 2;
 	
-	//
 	@Override
 	public void onAccessibilityEvent(AccessibilityEvent event) {
 		// 获取当前事件的根节点
